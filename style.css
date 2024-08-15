@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style-type: none;
+}
+
+:root {
+  --font-small: 1.2rem;
+  --font-medium: 1.4rem;
+  --font-large: 2rem;
+
+  --color-light-w: #ffff;
+  --color-light-gray: #efefef;
+  --color-text-black: #000000;
+  --color-text-blue: #0095f6;
+  --color-link-blue: #00376b;
+}
+
+.row {
+  max-width: 975px;
+  margin: auto;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* -------------------------------INSTA-NAV---------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
+nav {
+  border-bottom: 0.1rem solid #dadada;
+}
+
+.nav-content {
+  min-height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+}
+
+.nav-logo img {
+  height: 40px;
+}
+
+.insta-connect {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  max-width: 15.37rem;
+  height: 3.2rem;
+}
+
+.insta-connect a {
+  width: 7.17rem;
+  font-size: var(--font-medium);
+}
+
+.insta-connect .login {
+  color: var(--color-light-w);
+  background-color: var(--color-text-blue);
+  padding: 0.7rem 1rem;
+  font-weight: 500;
+  border-radius: 0.8rem;
+  text-align: center;
+  font-weight: 500;
+}
+.insta-connect .login:hover {
+  background-color: #0e8ee3;
+}
+
+.insta-connect .sign-up {
+  color: var(--color-text-blue);
+  font-weight: 500;
+}
+
+.insta-connect .sign-up:hover {
+  color: var(--color-text-black);
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* -------------------------------HEADER---------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
+main {
+  padding: 3rem 2rem 0rem;
+  height: calc(100vh - 6rem);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4.4rem;
+  gap: 1rem;
+}
+
+.header-container .text-box {
+  height: 20.08rem;
+  min-width: 61.33rem;
+}
+
+.profile-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
+  height: 20.08rem;
+  min-width: 29.16rem;
+}
+
+.profile-pic img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  filter: grayscale(100%);
+}
+
+h2 {
+  font-size: var(--font-large);
+  font-weight: 400;
+}
+
+.profile-banner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 4rem;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+}
+.follow button {
+  font-size: var(--font-medium);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  font-weight: 500;
+  background: none;
+  padding: 0.7rem 0rem;
+  border: none;
+}
+.follow button,
+.banner-content .message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light-gray);
+  border-radius: 0.8rem;
+  padding: 0rem 1.6rem;
+  font-size: var(--font-medium);
+  height: 3.2rem;
+  width: 8.16rem;
+  font-weight: 500;
+  margin-left: 0.8rem;
+  cursor: pointer;
+}
+
+.follow button:hover,
+.banner-content .message:hover {
+  background-color: #d9d7d7;
+}
+
+.profile-info ul {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 4rem;
+}
+
+.profile-info li button {
+  font-size: var(--font-medium);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.profile-info li button:hover {
+  color: #bcbcbc;
+}
+
+.bio span {
+  font-size: var(--font-medium);
+  font-weight: 600;
+}
+.user-id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light-gray);
+  border-radius: 2rem;
+  height: 2.8rem;
+  max-width: 10.07rem;
+  margin: 0.6rem 0rem;
+}
+.user-id:hover {
+  background-color: #dfdede;
+}
+
+.user-id a {
+  padding: 0rem 0.7rem;
+}
+.user-id a span {
+  font-size: var(--font-small);
+  font-weight: 400;
+}
+h1 {
+  font-size: var(--font-medium);
+  font-weight: 400;
+}
+
+.web-link img {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+.web-link span {
+  color: var(--color-link-blue);
+  cursor: pointer;
+}
+
+.web-link span:hover {
+  text-decoration: underline;
+}
+.user-id img {
+  margin: auto;
+  vertical-align: middle;
+  display: inline-block;
+  height: 16px;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/* -------------------------------MEDIA---------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------- */
+
+.media-container {
+  height: 5.28rem;
+  border-top: 0.1rem solid #dadada;
+}
+.media-container .content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media-banner a {
+  display: inline-block;
+  height: 5.2rem;
+  transform: translateY(34%);
+}
+.media-banner a:not(:last-child) {
+  margin-right: 6rem;
+}
+.media-banner span {
+  font-size: var(--font-small);
+  font-weight: 500;
+  margin-left: 0.6rem;
+}
+.media-banner img {
+  height: 1.2rem;
+}
+
+/*------------------------------------MEDIA IMGS---------------------------------------  */
+
+.media-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.media-box .media-img {
+  height: 30.9rem;
+  width: 30.9rem;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(17, 17, 17, 0.5);
+}
+
+.media-img:hover .overlay {
+  opacity: 1;
+}
+
+.ovarlay-content {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.reaction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cmnts img {
+  transform: scaleX(-1);
+}
+
+.like img,
+.cmnts img {
+  height: 2rem;
+}
+
+.like span,
+.cmnts span {
+  color: white;
+  font-size: var(--font-medium);
+  font-weight: 500;
+}
+
+/* .media-img:hover::before {
+  background: linear-gradient(rgba(17, 17, 17, 0.841));
+} */
+
+.media-box .img1 {
+  background-image: url("./imgs/img1.jpg");
+}
+.media-box .img2 {
+  background-image: url("./imgs/img3.jpg");
+}
+.media-box .img3 {
+  background-image: url("./imgs/pexels-anthony-🙂-132428.jpg");
+}
+.media-box .img4 {
+  background-image: url("./imgs/img2.jpg");
+}
+.media-box .img5 {
+  background-image: url("./imgs/pexels-aysegul-alp-19732803.jpg");
+}
+.media-box .img6 {
+  background-image: url("./imgs/img4.jpg");
+}
+.media-box .img7 {
+  background-image: url("./imgs/img5.jpg");
+}
+.media-box .img8 {
+  background-image: url("./imgs/img6.jpg");
+}
+.media-box .img9 {
+  background-image: url("./imgs/img7.jpg");
+}
+.media-box .img10 {
+  background-image: url("./imgs/img8.jpg");
+}
+.media-box .img11 {
+  background-image: url("./imgs/pexels-darwis-alwan-1995730.jpg");
+}
+.media-box .img12 {
+  background-image: url("./imgs/img9.jpg");
+}
